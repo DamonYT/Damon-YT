@@ -136,7 +136,7 @@ while a==0:
         c=1
         while c< (len(correctword)+6):
             letter=input("Your Guess: ")
-            if letter==("CheatCode"):
+            if letter==("matyond"):
                 print("YOU WIN")
                 print("The word is", correctword)
                 break
