@@ -1,7 +1,12 @@
 import random
 import sys
-import os
-os.startfile('HangmanMusic.mp3')
+user = input("Do you want to play music(y/n)?")
+if user == "yes":
+        import os
+        os.startfile('HangmanMusic.mp3')
+
+elif user == "no":
+        print("Ok! Starting game!")
 
 words=[
 "War","Brother","Winter"
@@ -136,7 +141,7 @@ while a==0:
         c=1
         while c< (len(correctword)+6):
             letter=input("Your Guess: ")
-            if letter==("matyond"):
+            if letter==("CheatCode"):
                 print("YOU WIN")
                 print("The word is", correctword)
                 break
