@@ -2,9 +2,9 @@ Metadata-Version: 1.0
 Name: Damon YT's Hangman
 Version: 1.2
 Summary: A typical game of Hangman, But wait theres a cheatcode?!?!?!?!
-Home-page: UNKNOWN
+GitHub: https://github.com/DamonYT/Damon-YT 
 Author: Damon YT
 Author-email: damonleigh.dl1@gmail.com
-License: UNKNOWN
+License: Eclipse Public License - v 2.0
 Description: UNKNOWN
-Platform: UNKNOWN
+Platform: Python
