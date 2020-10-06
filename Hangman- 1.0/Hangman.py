@@ -119,6 +119,12 @@ words=[
 
 
 ]
+
+
+with open("nigger.txt", "a") as f:
+    niggertxt = f
+score = niggertxt
+
 a=0
 while a==0:
     Rightword=random.choice(words)
@@ -129,12 +135,20 @@ while a==0:
     print("#You will get *number of letters in word* + 5 chances to guess.")
     print("#Incase you notice the missing Hangman, I oppose Capital Punishment ;)")
     print("1. Start")
-    print("2. Quit")
+    print("2. My Score")
+    print("3. Quit")
     b=input("Your choice: ")
     if b=="2":
+       print(f"Your score is {score}")
+       break
+    if b=="3":
        print("Thanks for playing")
        sys.exit()
     if b=="1":
+        if score == None:
+            f.write("0")
+        elif score == int:
+            break
         print("Guess this word: ")
         dashes=("_ "*len(correctword))
         print(dashes)
@@ -144,6 +158,8 @@ while a==0:
             if letter==("CheatCode"):
                 print("YOU WIN")
                 print("The word is", correctword)
+                score = niggertxt + 1
+                f.write(f"{score}")
                 break
             if letter in correctword and letter not in guessed and len(letter)==1:
                 guessed.append(letter)
@@ -164,6 +180,8 @@ while a==0:
                 print(correctword,"is the word you have correctly guessed.")
                 print()
                 c+=30
+                score = niggertxt + 1
+                f.write(f"{score}")
                 break
             if c==(len(correctword)+6):
                 print("The correct word is", correctword)
